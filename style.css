@@ -2,8 +2,8 @@
     font-family: Helvetica, sans-serif;
 }
 
-header {
-    font-size: 3.5em;
+title {
+    font-size: 2.5em;
     font-style: bold;
     font-family: Roboto Slab, serif;;
     display: swap;
@@ -13,6 +13,13 @@ header {
 nav, footer {
     background-color: #F2F0A1;
     border-bottom: 1px solid #FCC89B;
+}
+
+nav > a {
+    color: #FCC89B;
+    padding: 1em;
+    font-style: bold;
+    font-size: 1.5em;
 }
 
 body {
@@ -29,7 +36,7 @@ li {
     font-size: 2em;
 }
 
-a:hover {
+li > a:hover {
     background-color: #F2F0A1;
 }
 
@@ -37,7 +44,7 @@ a:visited {
     background-color: #ffffff;
 }
 
-a {
+li > a {
     color: #FCC89B;
     font-size: 1.2em;
     font-style: italic;
@@ -49,16 +56,18 @@ ul {
 
 article {
     background-color: #FFFFFF;
-    border: 1px solid #F2F0A1;
+    border: 1px solid #F2F0A1 dashed;
     padding: 1em;
     margin: 1em;
-    width:fit-content;
-    height:fit-content;
+    width:95%;
+    height:100%;
+    display: inline-block;
 }
 
 embed {
+    display: block;
     position: absolute;
     block-size: 100%;
-    width: 100%;
+    width: 95%;
     height: 100%;
 }
